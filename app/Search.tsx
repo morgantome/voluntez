@@ -16,15 +16,14 @@ const Search = () => {
 
   return (
     <>
-      <View style={styles.container}>
-        <Text style={styles.text}>This is the search screen</Text>
-      </View>  
-      <View style={styles.whiteBox} />
+      
+      <View style={styles.container} />
 
       <View style={styles.searchBarContainer}>
         <TextInput
           style={styles.searchInput}
           placeholder="Search areas near you..."
+          placeholderTextColor={888}
           value={searchQuery}
           onChangeText={setSearchQuery}
         />
@@ -96,6 +95,8 @@ const Search = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#ADD8E6", 
+
   },
   searchBarContainer: {
     position: "absolute",
